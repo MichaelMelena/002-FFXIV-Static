@@ -1,0 +1,31 @@
+{
+  "name": "ffxiv-static",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "sass src/scss/:site/css/",
+    "watch": "sass src/scss/:site/css/ --error-css --watch",
+    "copy": "node ./index.js",
+    "start" : "npm run build-scss && npm run copy",
+    "build": "npm run build-scss && npm run copy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelMelena/002-FFXIV-Static.git"
+  },
+  "author": "Michael Melena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelMelena/002-FFXIV-Static/issues"
+  },
+  "homepage": "https://github.com/MichaelMelena/002-FFXIV-Static#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security"
+  }
+}
